@@ -2,4 +2,12 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
-vim.opt.mouse = ""
+local opt = vim.opt
+opt.laststatus = 0
+opt.mouse = ""
+opt.showcmd = true
+opt.wildmenu = true
+opt.expandtab = true
+opt.shiftwidth = 2
+opt.tabstop = 2
+opt.smartindent = true
