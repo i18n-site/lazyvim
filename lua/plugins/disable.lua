@@ -5,6 +5,8 @@ return {
     enabled = false,
   },
   { "folke/noice.nvim", enabled = false },
-  { "rcarriga/nvim-notify", enabled = false }, -- noice 的依赖也禁用
+  { "rcarriga/nvim-notify", enabled = false },
   { "nvim-lualine/lualine.nvim", enabled = false },
+  { "gbprod/yanky.nvim", enabled = false }, -- 禁用选中复制
+  { "nvimdev/dashboard-nvim", enabled = false },
 }

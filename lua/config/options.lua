@@ -11,3 +11,5 @@ opt.expandtab = true
 opt.shiftwidth = 2
 opt.tabstop = 2
 opt.smartindent = true
+vim.g.snacks_animate = false
+vim.keymap.set("n", "mr", "<cmd>MRU<cr>", { desc = "最近打开的文件" })
