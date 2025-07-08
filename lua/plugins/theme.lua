@@ -23,6 +23,7 @@ return {
       hl.CursorLineNr = { fg = "#ffff00", bg = "#202020" } -- 让行号颜色在光标行上更突出
       hl.Visual = { bg = "#303000", fg = "#90c000" }
       hl.Search = { bg = "#c0c000", fg = "#000000" }
+      hl.Substitute = { bg = "#a0e000", fg = "#000000" }
       hl.Comment = { fg = "#777777" }
       hl.rustAttribute = { fg = "#339900" }
       hl.rustKeyword = { fg = "#228810" }
