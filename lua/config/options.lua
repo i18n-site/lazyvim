@@ -5,6 +5,7 @@
 vim.g.snacks_animate = false
 
 local opt = vim.opt
+
 opt.laststatus = 0
 opt.mouse = ""
 opt.showcmd = true
