@@ -31,6 +31,7 @@ return {
       hl.DiagnosticUnnecessary = { fg = "#909090" }
 
       hl["@function.method.call"] = { fg = "#33aa00" }
+      hl["@markup.raw.markdown_inline"] = { bg = "#000000", fg = "#00cc00" }
       hl["@variable.builtin"] = { fg = "#00aa50" }
       hl["@lsp.type.property"] = { fg = "#338900" }
       hl["@character.special"] = { fg = "#335900" }

@@ -6,6 +6,7 @@ return {
       filetype_exclude = { "diff", "rust" },
     },
   },
+  { "kchmck/vim-coffee-script" },
   {
     "Exafunction/windsurf.vim",
     -- init = function()
