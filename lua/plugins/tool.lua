@@ -1,5 +1,12 @@
 return {
   {
+    "mcauley-penney/tidy.nvim",
+    opts = {
+      enabled_on_save = true,
+      filetype_exclude = { "diff", "rust" },
+    },
+  },
+  {
     "Exafunction/windsurf.vim",
     -- init = function()
     --   vim.g.https_proxy = "http://127.0.0.1:7890"
