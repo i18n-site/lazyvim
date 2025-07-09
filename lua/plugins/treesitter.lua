@@ -1,6 +1,10 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   opts = {
+    highlight = {
+      enable = true,
+      -- disable = { "markdown" },
+    },
     incremental_selection = {
       enable = true,
       keymaps = {

@@ -3,7 +3,6 @@
 -- Add any additional options here
 
 vim.g.snacks_animate = false
-vim.opt.conceallevel = 0
 
 local opt = vim.opt
 
@@ -19,3 +18,6 @@ opt.relativenumber = false
 opt.clipboard = ""
 opt.wrap = true -- 开启软换行
 opt.linebreak = true -- 按单词换行，避免在单词中间断开
+opt.conceallevel = 0
+opt.spell = true
+opt.spelllang = { "en", "cjk" }
