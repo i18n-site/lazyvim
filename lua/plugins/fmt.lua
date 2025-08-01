@@ -1,9 +1,5 @@
 return {
   {
-    "i18n-fork/vim-stylus",
-    ft = { "svelte", "stylus" },
-  },
-  {
     "stevearc/conform.nvim",
     opts = function(_, opts)
       opts.formatters.stylus_supremacy = {
