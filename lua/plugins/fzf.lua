@@ -15,8 +15,6 @@ return {
   opts = {
     oldfiles = {
       include_current_session = true,
-      -- 让最新的文件显示在最上面
-      fzf_opts = { ["--layout"] = "reverse-list" },
     },
   },
   keys = {
