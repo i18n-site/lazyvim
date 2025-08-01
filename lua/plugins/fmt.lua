@@ -26,6 +26,7 @@ return {
         args = { "x", "fmt_svelte", "$FILENAME" },
       }
       opts.formatters_by_ft.svelte = { "fmt_svelte" }
+
       opts.formatters.stylus_supremacy = {
         command = "stylus-supremacy",
         args = function(ctx)
