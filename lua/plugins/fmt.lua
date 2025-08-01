@@ -1,7 +1,31 @@
 return {
   {
     "stevearc/conform.nvim",
+    build = function()
+      local cmd = "bun i -g fmt_svelte stylus-supremacy"
+      vim.fn.system(cmd)
+      print("conform.nvim: installed fmt_svelte & stylus-supremacy")
+    end,
+    init = function()
+      local augroup = vim.api.nvim_create_augroup("FormatAfterSaveCustom", { clear = true })
+      vim.api.nvim_create_autocmd("BufWritePost", {
+        group = augroup,
+        pattern = { "*.svelte", "*.styl" },
+        callback = function(args)
+          require("conform").format({
+            bufnr = args.buf,
+            async = true,
+            lsp_fallback = true,
+          })
+        end,
+      })
+    end,
     opts = function(_, opts)
+      opts.formatters.fmt_svelte = {
+        command = "bun",
+        args = { "x", "fmt_svelte", "$FILENAME" },
+      }
+      opts.formatters_by_ft.svelte = { "fmt_svelte" }
       opts.formatters.stylus_supremacy = {
         command = "stylus-supremacy",
         args = function(ctx)
