@@ -1,7 +1,7 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   opts = {
-    ensure_installed = { "svelte", "lua", "markdown", "css" },
+    ensure_installed = { "lua", "markdown", "css", "vue" },
     highlight = {
       enable = true,
       -- disable = { "markdown" },
