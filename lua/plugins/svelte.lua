@@ -4,6 +4,7 @@ return {
   dependencies = {
     "digitaltoad/vim-pug",
     "i18n-fork/context_filetype.vim",
+    "wavded/vim-stylus",
   },
   config = function()
     vim.g.vim_svelte_plugin_use_pug = 1
