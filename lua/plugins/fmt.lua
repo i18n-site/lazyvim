@@ -11,9 +11,11 @@ return {
       opts.formatters.fmt_svelte = {
         command = "bun",
         args = { "x", "fmt_svelte", "$FILENAME" },
+        stdin = false,
       }
       opts.formatters.stylus_supremacy = {
         command = "stylus-supremacy",
+        stdin = false,
         args = function(ctx)
           local config_filename = "supremacy.yml"
           local fallback_config = vim.fn.expand("~/.config/" .. config_filename)
@@ -42,6 +44,7 @@ return {
       opts.formatters.vfmt = {
         command = "v",
         args = { "fmt", "$FILENAME" },
+        stdin = false,
       }
 
       opts.formatters.alejandra = {
