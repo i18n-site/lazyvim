@@ -1,4 +1,4 @@
-<script lang="coffee">
+<script>
 
 </script>
 
