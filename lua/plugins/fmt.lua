@@ -9,8 +9,8 @@ return {
     opts = function(_, opts)
       -- 为 conform.nvim 增加你的自定义格式化程序
       opts.formatters.fmt_svelte = {
-        command = "bun",
-        args = { "x", "fmt_svelte", "$FILENAME" },
+        command = vim.fn.expand("~/.local/share/mise/shims/bun"),
+        args = { "x", "fmt_svelte", "-w", "$FILENAME" },
         stdin = false,
       }
       opts.formatters.stylus_supremacy = {
